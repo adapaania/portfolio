@@ -719,9 +719,9 @@
         <h3 class="project-title">AI-Powered Placement Portal</h3>
         <p class="project-desc">A full-stack AI recruitment system with resume parsing, semantic job matching, and application tracking for students and admins.</p>
         <ul class="project-points">
-          <li>Matched resumes to jobs semantically with Sentence-BERT embeddings and spaCy-based resume parsing.</li>
-          <li>Evaluated recommendation quality with Precision@5 and MRR.</li>
-          <li>Built on a normalized MySQL schema with a separate Flask REST API and role-based dashboards.</li>
+          <li>Ranked jobs by cosine similarity over Sentence-BERT embeddings (all-MiniLM-L6-v2), using skills parsed from resumes with spaCy NER, regex, and pdfminer.</li>
+          <li>Recommended the correct role in the top 5 for 4 of 5 test profiles (Precision@5), with a mean reciprocal rank of 0.57.</li>
+          <li>Co-authored a research paper on the system, which identified skill-to-role mapping (e.g. AI Researcher) as the main gap.</li>
         </ul>
         <div class="project-tags">
           <span class="project-tag">Sentence-BERT</span>
