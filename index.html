@@ -224,7 +224,7 @@
     .group-label + .exp-item, .group-label + .project-item { border-top: 1px solid var(--border); }
 
     /* ── EXPERIENCE ── */
-    #experience { background: var(--bg); }
+    #experience { background: var(--bg); border-top: 1px solid var(--border); }
     .exp-list { display: flex; flex-direction: column; }
     .exp-item {
       display: grid; grid-template-columns: 200px 1fr; gap: 2rem;
@@ -242,7 +242,7 @@
     .exp-points li::before { content: '→'; color: var(--accent); position: absolute; left: 0; }
 
     /* ── SKILLS ── */
-    #skills { background: var(--bg); border-top: 1px solid var(--border); }
+    #skills { background: var(--bg); }
     .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
     .skill-group { background: #fff; padding: 2.4rem; }
     .skill-group:first-child { background: var(--ink); color: var(--bg); }
@@ -360,8 +360,8 @@
   <span class="nav-logo">AA.ml</span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -449,10 +449,99 @@
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-title">Languages &amp; Data</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">pandas</span>
+        <span class="skill-tag">NumPy</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">AI &amp; Retrieval</div>
+      <div class="skill-tags">
+        <span class="skill-tag">LangGraph</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">RAG</span>
+        <span class="skill-tag">Qdrant</span>
+        <span class="skill-tag">ChromaDB</span>
+        <span class="skill-tag">BM25</span>
+        <span class="skill-tag">Cohere Embeddings / Reranking</span>
+        <span class="skill-tag">OpenAI API</span>
+        <span class="skill-tag">Anthropic API</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">ML &amp; Evaluation</div>
+      <div class="skill-tags">
+        <span class="skill-tag">scikit-learn</span>
+        <span class="skill-tag">LightGBM</span>
+        <span class="skill-tag">XGBoost</span>
+        <span class="skill-tag">Ragas</span>
+        <span class="skill-tag">LangSmith</span>
+        <span class="skill-tag">Langfuse</span>
+        <span class="skill-tag">Feature Engineering</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Applications &amp; Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">Railway</span>
+        <span class="skill-tag">Vercel</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Design &amp; Video</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">UI/UX</span>
+        <span class="skill-tag">App &amp; Web Prototyping</span>
+        <span class="skill-tag">Dashboards</span>
+        <span class="skill-tag">CapCut</span>
+        <span class="skill-tag">Adobe Premiere Pro</span>
+        <span class="skill-tag">VN Video Editor</span>
+        <span class="skill-tag">Short-Form Reels</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Content &amp; Outreach</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Instagram Content</span>
+        <span class="skill-tag">Social Media Marketing</span>
+        <span class="skill-tag">Posters &amp; Graphics</span>
+        <span class="skill-tag">Event Promotion</span>
+        <span class="skill-tag">Public Relations</span>
+        <span class="skill-tag">AI-Assisted Content</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
-    <span class="section-num">02</span>
+    <span class="section-num">03</span>
     <h2 class="section-title">Experience</h2>
     <div class="divider"></div>
   </div>
@@ -539,95 +628,6 @@
         <ul class="exp-points">
           <li>Designed posters and Instagram content in Canva to promote Ignite, a technical event at NMIMS.</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Skills</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="skills-grid reveal">
-    <div class="skill-group">
-      <div class="skill-group-title">Languages &amp; Data</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">PostgreSQL</span>
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">pandas</span>
-        <span class="skill-tag">NumPy</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">AI &amp; Retrieval</div>
-      <div class="skill-tags">
-        <span class="skill-tag">LangGraph</span>
-        <span class="skill-tag">LangChain</span>
-        <span class="skill-tag">RAG</span>
-        <span class="skill-tag">Qdrant</span>
-        <span class="skill-tag">ChromaDB</span>
-        <span class="skill-tag">BM25</span>
-        <span class="skill-tag">Cohere Embeddings / Reranking</span>
-        <span class="skill-tag">OpenAI API</span>
-        <span class="skill-tag">Anthropic API</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">ML &amp; Evaluation</div>
-      <div class="skill-tags">
-        <span class="skill-tag">scikit-learn</span>
-        <span class="skill-tag">LightGBM</span>
-        <span class="skill-tag">XGBoost</span>
-        <span class="skill-tag">Ragas</span>
-        <span class="skill-tag">LangSmith</span>
-        <span class="skill-tag">Langfuse</span>
-        <span class="skill-tag">Feature Engineering</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Applications &amp; Tools</div>
-      <div class="skill-tags">
-        <span class="skill-tag">FastAPI</span>
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">Next.js</span>
-        <span class="skill-tag">Streamlit</span>
-        <span class="skill-tag">REST APIs</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub Actions</span>
-        <span class="skill-tag">Railway</span>
-        <span class="skill-tag">Vercel</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Design &amp; Video</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Figma</span>
-        <span class="skill-tag">Canva</span>
-        <span class="skill-tag">UI/UX</span>
-        <span class="skill-tag">App &amp; Web Prototyping</span>
-        <span class="skill-tag">Dashboards</span>
-        <span class="skill-tag">CapCut</span>
-        <span class="skill-tag">Adobe Premiere Pro</span>
-        <span class="skill-tag">VN Video Editor</span>
-        <span class="skill-tag">Short-Form Reels</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Content &amp; Outreach</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Instagram Content</span>
-        <span class="skill-tag">Social Media Marketing</span>
-        <span class="skill-tag">Posters &amp; Graphics</span>
-        <span class="skill-tag">Event Promotion</span>
-        <span class="skill-tag">Public Relations</span>
-        <span class="skill-tag">AI-Assisted Content</span>
       </div>
     </div>
   </div>
