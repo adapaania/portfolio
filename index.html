@@ -214,6 +214,15 @@
     .edu-school { font-family: var(--mono); font-size: .75rem; color: var(--accent); letter-spacing: .06em; }
     .edu-year { font-family: var(--mono); font-size: .72rem; color: var(--muted); }
 
+    /* ── CATEGORY GROUPS ── */
+    .group-label {
+      font-family: var(--mono); font-size: .78rem; font-weight: 400; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--accent);
+      margin: 3.5rem 0 1.2rem;
+    }
+    .group-label:first-child { margin-top: 0; }
+    .group-label + .exp-item, .group-label + .project-item { border-top: 1px solid var(--border); }
+
     /* ── EXPERIENCE ── */
     #experience { background: var(--bg); }
     .exp-list { display: flex; flex-direction: column; }
@@ -448,19 +457,7 @@
     <div class="divider"></div>
   </div>
   <div class="exp-list">
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <div class="exp-date">2025 – Present</div>
-        <div class="exp-place">Hoboken, NJ</div>
-      </div>
-      <div>
-        <h3 class="exp-role">Social Media &amp; Marketing</h3>
-        <div class="exp-org">Business Intelligence and Analytics Club · Stevens Institute of Technology</div>
-        <ul class="exp-points">
-          <li>Design and publish Instagram content promoting club events and initiatives to the Stevens student community.</li>
-        </ul>
-      </div>
-    </div>
+    <h3 class="group-label reveal">AI &amp; Data</h3>
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-date">May 2024 – Jun 2024</div>
@@ -473,6 +470,33 @@
           <li>Built a credit-risk modeling pipeline using account and credit-enquiry data for 222,990 development records and a separate 39,417-record test set.</li>
           <li>Engineered repayment-history, loan-amount, and enquiry-recency features; selected 68 predictors using recursive feature elimination rankings.</li>
           <li>Benchmarked Logistic Regression, LightGBM, and XGBoost; Logistic Regression had the highest test ROC-AUC at 0.655, versus 0.643 and 0.624 (KS: 0.225).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">2026</div>
+        <div class="exp-place">Certification</div>
+      </div>
+      <div>
+        <h3 class="exp-role">AI Engineering Certification</h3>
+        <div class="exp-org"><a href="https://drive.google.com/file/d/1DaKv2Tt9gEZ2VC2MfVId92uk7eMLv8Kj/view" target="_blank">AI Makerspace · AIE9 Cohort</a></div>
+        <ul class="exp-points">
+          <li>Agentic RAG, multi-agent systems, agent memory, retrieval, and synthetic-data evaluation.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="group-label reveal">Design &amp; Media</h3>
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">2025 – Present</div>
+        <div class="exp-place">Hoboken, NJ</div>
+      </div>
+      <div>
+        <h3 class="exp-role">Social Media &amp; Marketing</h3>
+        <div class="exp-org">Business Intelligence and Analytics Club · Stevens Institute of Technology</div>
+        <ul class="exp-points">
+          <li>Design and publish Instagram content promoting club events and initiatives to the Stevens student community.</li>
         </ul>
       </div>
     </div>
@@ -527,19 +551,6 @@
         <ul class="exp-points">
           <li>Created and edited short-form promotional reels in VN Video Editor for undergraduate events.</li>
           <li>Supported event coordination, public relations, and promotional outreach.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <div class="exp-date">2026</div>
-        <div class="exp-place">Certification</div>
-      </div>
-      <div>
-        <h3 class="exp-role">AI Engineering Certification</h3>
-        <div class="exp-org"><a href="https://drive.google.com/file/d/1DaKv2Tt9gEZ2VC2MfVId92uk7eMLv8Kj/view" target="_blank">AI Makerspace · AIE9 Cohort</a></div>
-        <ul class="exp-points">
-          <li>Agentic RAG, multi-agent systems, agent memory, retrieval, and synthetic-data evaluation.</li>
         </ul>
       </div>
     </div>
@@ -643,6 +654,7 @@
     <div class="divider"></div>
   </div>
   <div class="projects-list">
+    <h3 class="group-label reveal">AI &amp; LLM Systems</h3>
 
     <div class="project-item reveal">
       <span class="project-num">001</span>
@@ -699,8 +711,89 @@
       <span class="project-arrow">→</span>
     </a>
 
-    <div class="project-item reveal">
+    <a href="#" class="project-item reveal">
       <span class="project-num">004</span>
+      <div>
+        <h3 class="project-title">Prompt Engineering — PDF Table Extraction</h3>
+        <p class="project-desc">Designed a few-shot prompting pipeline to extract structured tables from PDFs using LLM APIs. Evaluated extraction consistency and output reliability at scale, exploring automated document intelligence workflows.</p>
+        <div class="project-tags">
+          <span class="project-tag">LLM APIs</span>
+          <span class="project-tag">Few-Shot Prompting</span>
+          <span class="project-tag">PyMuPDF</span>
+          <span class="project-tag">Automation</span>
+        </div>
+      </div>
+      <span class="project-arrow">→</span>
+    </a>
+
+    <h3 class="group-label reveal">Machine Learning &amp; Data Science</h3>
+
+    <a href="#" class="project-item reveal">
+      <span class="project-num">005</span>
+      <div>
+        <h3 class="project-title">Insider Trading Signal Classification</h3>
+        <p class="project-desc">Built a financial signal classification pipeline on SEC Form 4 filings — engineering forward return features, benchmarking against S&P 500, and applying ML classification to identify predictive insider trading patterns. Combines real-world market data with rigorous feature engineering.</p>
+        <div class="project-tags">
+          <span class="project-tag">FinTech</span>
+          <span class="project-tag">Feature Engineering</span>
+          <span class="project-tag">Classification</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">SEC Data</span>
+        </div>
+      </div>
+      <span class="project-arrow">→</span>
+    </a>
+
+    <a href="#" class="project-item reveal">
+      <span class="project-num">006</span>
+      <div>
+        <h3 class="project-title">ML Algorithms From Scratch</h3>
+        <p class="project-desc">Implemented linear regression, logistic regression, gradient descent (batch, SGD, mini-batch), and regularization from first principles — with full derivations, dimension tracking, and weight update proofs. Built to understand optimization at the mathematical level, not just use libraries.</p>
+        <div class="project-tags">
+          <span class="project-tag">Optimization</span>
+          <span class="project-tag">Gradient Descent</span>
+          <span class="project-tag">NumPy</span>
+          <span class="project-tag">From Scratch</span>
+        </div>
+      </div>
+      <span class="project-arrow">→</span>
+    </a>
+
+    <a href="#" class="project-item reveal">
+      <span class="project-num">007</span>
+      <div>
+        <h3 class="project-title">Breast Cancer Detection (Deep Learning)</h3>
+        <p class="project-desc">Applied transfer learning (ResNet50, VGG16, InceptionV3, EfficientNetB0) to the CBIS-DDSM mammography dataset. Handled corrupted .npy files, performed architecture comparison, and evaluated with ROC curves, AUC, and confusion matrices.</p>
+        <div class="project-tags">
+          <span class="project-tag">PyTorch</span>
+          <span class="project-tag">Transfer Learning</span>
+          <span class="project-tag">Computer Vision</span>
+          <span class="project-tag">Healthcare AI</span>
+        </div>
+      </div>
+      <span class="project-arrow">→</span>
+    </a>
+
+    <a href="#" class="project-item reveal">
+      <span class="project-num">008</span>
+      <div>
+        <h3 class="project-title">M5 Demand Forecasting</h3>
+        <p class="project-desc">Tackled the M5 Walmart forecasting challenge by comparing classical and deep learning approaches — ARIMA, SARIMA, Prophet, and LSTM — across 300+ SKUs. Structured as a reproducible GitHub repo with rigorous evaluation metrics.</p>
+        <div class="project-tags">
+          <span class="project-tag">Time Series</span>
+          <span class="project-tag">Prophet</span>
+          <span class="project-tag">ARIMA</span>
+          <span class="project-tag">LSTM</span>
+          <span class="project-tag">Forecasting</span>
+        </div>
+      </div>
+      <span class="project-arrow">→</span>
+    </a>
+
+    <h3 class="group-label reveal">Design &amp; Prototyping</h3>
+
+    <div class="project-item reveal">
+      <span class="project-num">009</span>
       <div>
         <h3 class="project-title">AI-Powered Placement Portal</h3>
         <p class="project-desc">A full-stack AI recruitment system with resume parsing, semantic job matching using Sentence-BERT, role-based dashboards for students and admins, and end-to-end application tracking, plus admin views for job posting and statistics, designed end to end in Figma. Evaluated with Precision@5 and MRR. Production-style architecture with normalized MySQL schema and REST API separation.</p>
@@ -719,9 +812,8 @@
       <span class="project-arrow">→</span>
     </div>
 
-
     <div class="project-item reveal">
-      <span class="project-num">005</span>
+      <span class="project-num">010</span>
       <div>
         <h3 class="project-title">Penny Wise — Finance Tracking App</h3>
         <p class="project-desc">An interactive finance app prototype with wallet dashboards, transaction history, payments, and expense entry. Includes savings and spending dashboards with monthly totals, trend charts, and month-over-month comparisons.</p>
@@ -737,83 +829,6 @@
       </div>
       <span class="project-arrow">→</span>
     </div>
-    <a href="#" class="project-item reveal">
-      <span class="project-num">006</span>
-      <div>
-        <h3 class="project-title">Insider Trading Signal Classification</h3>
-        <p class="project-desc">Built a financial signal classification pipeline on SEC Form 4 filings — engineering forward return features, benchmarking against S&P 500, and applying ML classification to identify predictive insider trading patterns. Combines real-world market data with rigorous feature engineering.</p>
-        <div class="project-tags">
-          <span class="project-tag">FinTech</span>
-          <span class="project-tag">Feature Engineering</span>
-          <span class="project-tag">Classification</span>
-          <span class="project-tag">Python</span>
-          <span class="project-tag">SEC Data</span>
-        </div>
-      </div>
-      <span class="project-arrow">→</span>
-    </a>
-
-    <a href="#" class="project-item reveal">
-      <span class="project-num">007</span>
-      <div>
-        <h3 class="project-title">ML Algorithms From Scratch</h3>
-        <p class="project-desc">Implemented linear regression, logistic regression, gradient descent (batch, SGD, mini-batch), and regularization from first principles — with full derivations, dimension tracking, and weight update proofs. Built to understand optimization at the mathematical level, not just use libraries.</p>
-        <div class="project-tags">
-          <span class="project-tag">Optimization</span>
-          <span class="project-tag">Gradient Descent</span>
-          <span class="project-tag">NumPy</span>
-          <span class="project-tag">From Scratch</span>
-        </div>
-      </div>
-      <span class="project-arrow">→</span>
-    </a>
-
-    <a href="#" class="project-item reveal">
-      <span class="project-num">008</span>
-      <div>
-        <h3 class="project-title">Breast Cancer Detection (Deep Learning)</h3>
-        <p class="project-desc">Applied transfer learning (ResNet50, VGG16, InceptionV3, EfficientNetB0) to the CBIS-DDSM mammography dataset. Handled corrupted .npy files, performed architecture comparison, and evaluated with ROC curves, AUC, and confusion matrices.</p>
-        <div class="project-tags">
-          <span class="project-tag">PyTorch</span>
-          <span class="project-tag">Transfer Learning</span>
-          <span class="project-tag">Computer Vision</span>
-          <span class="project-tag">Healthcare AI</span>
-        </div>
-      </div>
-      <span class="project-arrow">→</span>
-    </a>
-
-    <a href="#" class="project-item reveal">
-      <span class="project-num">009</span>
-      <div>
-        <h3 class="project-title">M5 Demand Forecasting</h3>
-        <p class="project-desc">Tackled the M5 Walmart forecasting challenge by comparing classical and deep learning approaches — ARIMA, SARIMA, Prophet, and LSTM — across 300+ SKUs. Structured as a reproducible GitHub repo with rigorous evaluation metrics.</p>
-        <div class="project-tags">
-          <span class="project-tag">Time Series</span>
-          <span class="project-tag">Prophet</span>
-          <span class="project-tag">ARIMA</span>
-          <span class="project-tag">LSTM</span>
-          <span class="project-tag">Forecasting</span>
-        </div>
-      </div>
-      <span class="project-arrow">→</span>
-    </a>
-
-    <a href="#" class="project-item reveal">
-      <span class="project-num">010</span>
-      <div>
-        <h3 class="project-title">Prompt Engineering — PDF Table Extraction</h3>
-        <p class="project-desc">Designed a few-shot prompting pipeline to extract structured tables from PDFs using LLM APIs. Evaluated extraction consistency and output reliability at scale, exploring automated document intelligence workflows.</p>
-        <div class="project-tags">
-          <span class="project-tag">LLM APIs</span>
-          <span class="project-tag">Few-Shot Prompting</span>
-          <span class="project-tag">PyMuPDF</span>
-          <span class="project-tag">Automation</span>
-        </div>
-      </div>
-      <span class="project-arrow">→</span>
-    </a>
-
   </div>
 </section>
 
