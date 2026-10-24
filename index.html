@@ -741,17 +741,21 @@
     <div class="project-item reveal">
       <span class="project-num">005</span>
       <div>
-        <h3 class="project-title">Insider Trading Signal Classification</h3>
-        <p class="project-desc">A financial signal classification pipeline on SEC Form 4 insider filings.</p>
+        <h3 class="project-title">Insider Trading Signal Classifier</h3>
+        <p class="project-desc">An ML pipeline that predicts stock price movements from SEC Form 4 insider trading data, using 63-day market-adjusted forward returns as labels.</p>
         <ul class="project-points">
-          <li>Engineered forward-return features and benchmarked them against the S&amp;P 500.</li>
-          <li>Applied ML classifiers to identify predictive insider trading patterns.</li>
+          <li>Processed 400K+ transactions across 5,000 securities and 12 quarters of data.</li>
+          <li>Built a scalable ETL workflow that pulls Yahoo Finance prices to compute market-adjusted forward returns.</li>
+          <li>Got past a 16GB memory ceiling with quarterly partitioning, cutting the compute footprint by 90% without losing data completeness.</li>
         </ul>
         <div class="project-tags">
           <span class="project-tag">Python</span>
-          <span class="project-tag">Feature Engineering</span>
-          <span class="project-tag">Classification</span>
-          <span class="project-tag">SEC Data</span>
+          <span class="project-tag">XGBoost</span>
+          <span class="project-tag">Pandas</span>
+          <span class="project-tag">Scikit-learn</span>
+          <span class="project-tag">SEC EDGAR</span>
+          <span class="project-tag">Yahoo Finance API</span>
+          <span class="project-tag">ETL Pipeline</span>
         </div>
       </div>
     </div>
